@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>신정민-그라데이션 인트로</title>
+    <style>
+        
+        @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@300&display=swap');
+
+        body {
+            background: url(./images/gr.svg)no-repeat center/cover;
+            height: 100vh;
+            color: #fff;
+        }
+
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .ani {
+            font-size: 150px;
+            font-family: 'Inconsolata', monospace;
+            /* font-weight: bold; */
+            animation: slide-up 1s ease both;
+
+        }
+
+        @keyframes slide-up {
+            from {
+                transform: translateY(100%);
+            }
+
+            to {
+                transform: translateY(0);
+            }
+        }
+
+        .J {
+            animation-delay:0s;
+        }
+        .M {
+            animation-delay:1s;
+        }
+    </style>
+</head>
+<body>
+    <!-- .box>.ani.S{S}*2 -->
+    <div class="box">
+        <div class="ani J">J</div>
+        <div class="ani M">M</div>
+    </div>
+</body>
+</html>
